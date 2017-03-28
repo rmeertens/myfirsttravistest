@@ -14,8 +14,11 @@ python:
 # command to install dependencies
 install:
   - "pip install -r requirements.txt"
+  - pip install coveralls
 # command to run tests
 script: python hello.py
 script: pytest
 notifications:
   slack: bestemachinelearners:18dp8R4SSqwli3bzAd6kwp18
+after_success: 
+ - coveralls
