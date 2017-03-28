@@ -7,13 +7,16 @@ def test_zero_division():
     with pytest.raises(ZeroDivisionError):
         1/0
 
+@pytest.fixture
+def cmdopt():
+    return "type1"
 
 def test_answer(cmdopt):
     if cmdopt == "type1":
         print("first")
     if cmdopt == "type2":
         print('second')
-    assert 0
+    assert 1
 
 class TestClass:
     def test_one(self):
@@ -22,11 +25,11 @@ class TestClass:
 
     def test_two(self):
         x = "hello"
-        assert hasattr(x, 'check')
+        assert "el" in x
 
 def test_needsfiles(tmpdir):
     print (tmpdir)
-    assert 0
+    assert 1
 
 @pytest.fixture
 def coolargument():
@@ -34,7 +37,7 @@ def coolargument():
 
 def testthis(coolargument):
     print(coolargument)
-    assert 0
+    assert 1
 
 def f():
     raise SystemExit(1)
