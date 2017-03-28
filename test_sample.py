@@ -18,6 +18,8 @@ def test_answer(cmdopt):
         print('second')
     assert 1
 
+def hoi():
+  assert 1
 class TestClass:
     def test_one(self):
         x = "this"
