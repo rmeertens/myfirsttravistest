@@ -17,3 +17,5 @@ install:
 # command to run tests
 script: python hello.py
 script: pytest
+notifications:
+  slack: bestemachinelearners:18dp8R4SSqwli3bzAd6kwp18
