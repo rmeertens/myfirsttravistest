@@ -16,7 +16,7 @@ def test_answer(cmdopt):
         print("first")
     if cmdopt == "type2":
         print('second')
-    assert 1
+    assert 0
 
 class TestClass:
     def test_one(self):
