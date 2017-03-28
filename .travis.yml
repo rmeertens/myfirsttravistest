@@ -17,7 +17,7 @@ install:
   - pip install coveralls
 # command to run tests
 script: python hello.py
-script: pytest
+script: pytest --doctest-modules
 notifications:
   slack: bestemachinelearners:18dp8R4SSqwli3bzAd6kwp18
 after_success: 
