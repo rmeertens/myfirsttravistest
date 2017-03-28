@@ -18,6 +18,15 @@ def test_answer(cmdopt):
         print('second')
     assert 1
 
+
+def square(x):
+  """ 
+  example:
+  >>> square(3)
+  9
+  """
+  return x**2
+
 def hoi():
   assert 1
 class TestClass:
@@ -28,6 +37,9 @@ class TestClass:
     def test_two(self):
         x = "hello"
         assert "el" in x
+
+    def test_square(self):
+      assert square(5) == 25
 
 def test_needsfiles(tmpdir):
     print (tmpdir)
