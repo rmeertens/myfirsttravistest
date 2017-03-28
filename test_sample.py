@@ -11,6 +11,10 @@ def test_zero_division():
 def cmdopt():
     return "type1"
 
+def winning():
+  print("winning")
+  assert 1
+
 def test_answer(cmdopt):
     if cmdopt == "type1":
         print("first")
