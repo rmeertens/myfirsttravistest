@@ -1,6 +1,7 @@
 import pytest
 def inc(x):
-    return x+1
+    return x+3
+
 def good_answer():
     assert inc(3) == 4
 def test_zero_division():
